@@ -1,11 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { TacticalBoard } from './features/tactical-board/tactical-board';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [TacticalBoard],
   templateUrl: './app.html',
-  standalone: false,
   styleUrl: './app.css'
 })
+
 export class App {
-  protected readonly title = signal('tactical-board');
+  
 }

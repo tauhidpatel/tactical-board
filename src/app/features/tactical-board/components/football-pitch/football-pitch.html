@@ -1,0 +1,74 @@
+
+<div class="pitch-wrapper">
+  <svg
+    class="pitch"
+    viewBox="0 0 1050 680"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Empty football tactical pitch"
+  >
+    <!-- Pitch surface -->
+    <rect
+      x="0"
+      y="0"
+      width="1050"
+      height="680"
+      rx="8"
+      fill="var(--pitch-background)"
+    />
+
+    <g
+      fill="none"
+      stroke="var(--pitch-lines)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <!-- Outer boundary -->
+      <rect x="12" y="12" width="1026" height="656" />
+
+      <!-- Halfway line -->
+      <line x1="525" y1="12" x2="525" y2="668" />
+
+      <!-- Center circle -->
+      <circle cx="525" cy="340" r="91" />
+
+      <!-- Center spot -->
+      <circle cx="525" cy="340" r="3" fill="var(--pitch-lines)" stroke="none" />
+
+      <!-- Left penalty area -->
+      <rect x="12" y="165" width="165" height="350" />
+
+      <!-- Left goal area -->
+      <rect x="12" y="252" width="55" height="176" />
+
+      <!-- Left penalty spot -->
+      <circle cx="122" cy="340" r="3" fill="var(--pitch-lines)" stroke="none" />
+
+      <!-- Left penalty arc -->
+      <path d="M 177 267 A 91 91 0 0 1 177 413" />
+
+      <!-- Right penalty area -->
+      <rect x="873" y="165" width="165" height="350" />
+
+      <!-- Right goal area -->
+      <rect x="983" y="252" width="55" height="176" />
+
+      <!-- Right penalty spot -->
+      <circle cx="928" cy="340" r="3" fill="var(--pitch-lines)" stroke="none" />
+
+      <!-- Right penalty arc -->
+      <path d="M 873 267 A 91 91 0 0 0 873 413" />
+
+      <!-- Goals -->
+      <rect x="0" y="277" width="12" height="126" />
+      <rect x="1038" y="277" width="12" height="126" />
+
+      <!-- Corner arcs -->
+      <path d="M 12 30 A 18 18 0 0 1 30 12" />
+      <path d="M 1020 12 A 18 18 0 0 1 1038 30" />
+      <path d="M 12 650 A 18 18 0 0 0 30 668" />
+      <path d="M 1020 668 A 18 18 0 0 0 1038 650" />
+    </g>
+  </svg>
+</div>

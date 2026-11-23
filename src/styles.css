@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* App colors */
+  --app-background: #F7F7F4;
+  --surface: #FFFFFF;
+  --surface-hover: #F1F2EE;
+
+  /* Pitch colors */
+  --pitch-background: #E9EDE6;
+  --pitch-lines: #C3CDBE;
+
+  /* Team colors */
+  --team-red: #D96C70;
+  --team-blue: #648CCB;
+
+  /* Text */
+  --text-primary: #363A36;
+  --text-secondary: #858B83;
+  --text-muted: #A6AAA3;
+
+  /* Borders and shadows */
+  --border-color: #E8E9E4;
+  --shadow-toolbar: 0 8px 30px rgba(40, 48, 38, 0.09);
+
+  /* Typography */
+  --font-family: 'DM Sans', sans-serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--app-background);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}

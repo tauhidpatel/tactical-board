@@ -1,0 +1,68 @@
+
+:host {
+  position: absolute;
+  z-index: 10;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  box-shadow: var(--shadow-toolbar);
+}
+
+.tool-button {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-primary);
+  transition: background 150ms ease, color 150ms ease;
+
+  svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  &:hover {
+    background: var(--surface-hover);
+  }
+
+  &.active {
+    background: #EDF0E9;
+    color: #53694E;
+  }
+}
+
+.separator {
+  width: 1px;
+  height: 23px;
+  background: var(--border-color);
+  margin: 0 4px;
+}
+
+.delete-button:hover {
+  background: #FBEDEC;
+  color: #C45F5F;
+}
+
+@media (max-width: 700px) {
+  :host {
+    bottom: 24px;
+  }
+
+  .tool-button {
+    width: 39px;
+    height: 39px;
+  }
+}
